@@ -131,8 +131,6 @@ class SortingRobot:
             # try to swap while we haven't reached the end of the list
             while(self.can_move_right()):
                 self.compare_items_and_swap_in_list()
-                # if the light is on
-                # if the light is off
             # send robot's position back to begining of list
             while(self.can_move_left()):
                 self.move_left()

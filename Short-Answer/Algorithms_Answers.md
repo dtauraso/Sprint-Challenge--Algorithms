@@ -53,6 +53,8 @@ else:
 
         drop from mid building
         if it breaks
+            if(high - 1 == low)
+                return low # is this the largest possible story?
             high = mid - 1
         elif if doens't break
             # last round

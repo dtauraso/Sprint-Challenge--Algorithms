@@ -99,12 +99,12 @@ class SortingRobot:
         self.move_right()
 
         if(self.compare_item() == -1 or self.compare_item() == 0):
-            # held item is less than or equal to the (i + 1)th item
+            # case 1: held item is less than or equal to the (i + 1)th item
             # put item back
             self.move_left()
             self.swap_item()
         else:
-            # held item is greater than the (i + 1)th item
+            # case 2: held item is greater than the (i + 1)th item
             self.swap_item()
             self.move_left()
             self.swap_item()

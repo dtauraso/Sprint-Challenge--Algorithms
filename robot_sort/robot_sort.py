@@ -92,11 +92,23 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+    def swap_items_in_List(self):
+        swap_items()
+        move_right()
+        swap_items()
+        move_left()
+        swap_items()
+        # move_right()
+
     def sort(self):
         """
         Sort the robot's list.
         """
         # Fill this out
+
+        set_light_on()
+        while(light_is_on()):
+            
         pass
 
 
